@@ -16,7 +16,7 @@ class Todo(db.Model):
         return '<Task %r>' % self.id
     
 
-with app.app_context():
+with app.app_context(): #Create a database
     db.create_all()
 
 @app.route('/')
