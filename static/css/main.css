@@ -8,6 +8,53 @@ body{
     margin: 10px auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
 }
+/* Style for the header and navbar */
+header {
+    background-color: #333; /* Background color of the header */
+    color: #fff; /* Text color in the header */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style for the profile link */
+.profile a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for the navigation links */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Spacing between navigation links */
+}
+
+/* Style for navigation link text */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #00A859; /* Change to green color on hover */
+}
+
+.scrollable-div {
+    overflow: auto; /* Add scrollbars when content exceeds the height */
+    border: 1px solid #ccc; /* Optional border for styling */
+}
 table {
     border: 1px solid black;
     border-collapse: collapse;
