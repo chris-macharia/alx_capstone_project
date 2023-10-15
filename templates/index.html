@@ -1,29 +1,5 @@
 {% extends 'base.html' %}
 
-{% block title %}
-<title>Task Manager</title>
-{% endblock %}
-
-{% block header %}
-<header>
-    <nav class="navbar">
-        <div class="profile">
-            <a href="#">Home</a>
-        </div>
-        <div class="search-box">
-            <input type="text" placeholder="Search">
-            <button type="submit"><i class="fas fa-search"></i></button>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#">Category</a></li>
-            <li><a href="#">Due Date</a></li>
-            <li><a href="#">Priority</a></li>
-            <li><a href="#">Profile</a></li>
-        </ul>
-    </nav>
-</header>
-{% endblock %}
-
 {% block body %}
 <div class="content scrollable-div">
     <h1 class="centered-content">Task Manager</h1>
@@ -68,22 +44,4 @@
         <input type="submit" value="Add Task" class="button update-button" id="task-submit-button">
     </form>
 </div>
-{% endblock %}
-
-{% block footer %}
-<div class="social-media-section hidden" id="page-footer">
-    <a href="#">
-        <i class="fab fa-facebook"></i>
-    </a>
-    <a href="#">
-        <i class="fab fa-twitter"></i>
-    </a>
-    <a href="#">
-        <i class="fab fa-instagram"></i>
-    </a>
-    <a href="#">
-        <i class="fab fa-linkedin"></i>
-    </a>
-</div>
-<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 {% endblock %}
