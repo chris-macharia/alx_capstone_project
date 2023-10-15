@@ -5,7 +5,7 @@ body{
 }
 .centered-content {
     width: 60%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 10px auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
 }
 table {
@@ -20,6 +20,42 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+
+/* Style for rectangular buttons with rounded corners */
+.button {
+    display: inline-block;
+    padding: 0 4px 0 0; /* Increase padding for larger buttons */
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #466297;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center; /* Center the button text */
+    margin: 0 0px 10px 0; /* Center the button within its container */
+    height: 30px;
+    width: 80px;
+}
+
+/* Hover effect for all buttons */
+.button:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+/* Hover effect for updating and deleting buttons */
+.update-button:hover {
+    background-color: #4aa179; /* Change to green color on hover */
+    color: #fff;
+    border-color: #389e6f;
+}
+.delete-button:hover {
+    background-color: #834139; /* Change to green color on hover */
+    color: #fff;
+    border-color: #703535;
+}
+
 /* CSS for the Social Media Section*/
 .social-media-section {
     text-align: center;
