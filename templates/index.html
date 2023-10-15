@@ -37,19 +37,28 @@
         <tr>
             <th>Task</th>
             <th>Added</th>
+            <th>Done</th>
             <th>Actions</th>
         </tr>
 
         {% for task in tasks %}
-            <tr>
-                <td>{{ task.content }}</td>
-                <td>{{ task.date_created.date() }}</td>
-                <td>
-                    <a class="button delete-button" href="/delete/{{task.id}}">Delete</a>
-                    <br>
-                    <a class="button update-button" href="/update/{{task.id}}">Update</a>
-                </td>
-            </tr>
+        <tr>
+            <td>{{ task.content }}</td>
+            <td>{{ task.date_created.date() }}</td>
+            <td>
+                <label class="toggle"> <!--toggle button-->
+                    <input class="toggle-input" type="checkbox" />
+                    <span class="toggle-label" data-off="OFF" data-on="ON"></span>
+                    <span class="toggle-handle"></span>
+                 </label>
+            </td>
+            <td>
+                <a class="button delete-button" href="/delete/{{ task.id }}">Delete</a>
+                <br>
+                <a class="button update-button" href="/update/{{ task.id }}">Update</a>
+            </td>
+        </tr>
+        
         {% endfor %}    
     </table>
     {% endif %}
