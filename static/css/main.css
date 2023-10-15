@@ -3,11 +3,6 @@ body{
     font-family: sans-serif;
     background-color: grey;
 }
-.centered-content {
-    width: 60%; /* Adjust the width as needed */
-    margin: 10px auto; /* Center the container horizontally */
-    text-align: center; /* Center the content inside the container */
-}
 /* Style for the header and navbar */
 header {
     background-color: #333; /* Background color of the header */
@@ -15,10 +10,16 @@ header {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    z-index: 1;
+    background-color: #333;
 }
 
 /* Style for the profile link */
@@ -50,8 +51,14 @@ header {
 .nav-links a:hover {
     color: #00A859; /* Change to green color on hover */
 }
+.centered-content {
+    width: 60%; /* Adjust the width as needed */
+    margin: 10px auto; /* Center the container horizontally */
+    text-align: center; /* Center the content inside the container */
+}
 
 .scrollable-div {
+    margin-top: 90px;
     overflow: auto; /* Add scrollbars when content exceeds the height */
     border: 1px solid #ccc; /* Optional border for styling */
 }
@@ -140,6 +147,22 @@ th, td {
 
 .social-media-section a i.fab.fa-linkedin {
     color: #0077B5; /* LinkedIn blue */
+}
+/* Define styles for the hidden class */
+.hidden {
+    display: none;
+}
+
+/* Define styles for the footer */
+#page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 
