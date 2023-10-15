@@ -22,6 +22,39 @@ header {
     background-color: #333;
 }
 
+/* Style for the search box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px;
+}
+
+/* Style for the search input */
+.search-box input {
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px;
+    width: 400px; /* Adjust the width as needed */
+}
+
+/* Style for the search button */
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Style for the search icon (Font Awesome) */
+.search-box button i {
+    color: #333;
+    font-size: 1.2em; /* Adjust the size as needed */
+}
+
+
 /* Style for the profile link */
 .profile a {
     text-decoration: none;
