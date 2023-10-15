@@ -8,7 +8,7 @@
 <header>
     <nav class="navbar">
         <div class="profile">
-            <a href="#">Profile</a>
+            <a href="#">Home</a>
         </div>
         <div class="search-box">
             <input type="text" placeholder="Search">
@@ -43,7 +43,7 @@
 
         {% for task in tasks %}
         <tr>
-            <td>{{ task.content }}</td>
+            <td>{{ task.content }} <i class="fas fa-bell"></i></td>
             <td>{{ task.date_created.date() }}</td>
             <td>
                 <label class="toggle"> <!--toggle button-->
@@ -65,7 +65,7 @@
 
     <form action="/" method="POST" class="centered-content">
         <input type="text" name="content" id="content">
-        <input type="submit" value="Add Task" class="button update-button">
+        <input type="submit" value="Add Task" class="button update-button" id="task-submit-button">
     </form>
 </div>
 {% endblock %}

@@ -1,3 +1,10 @@
+// Responsible for the bell icon
+$(document).ready(function() {
+    $('.toggle-bell').click(function() {
+        $(this).toggleClass('clicked');
+    });
+});
+
 // script responsible for footer behaviour
 const footer = document.getElementById('page-footer');
 
