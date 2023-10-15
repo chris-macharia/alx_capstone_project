@@ -8,6 +8,11 @@
 <div class="content">
     <h1 class="centered-content">Task Master</h1>
 
+    {% if tasks|length < 1 %}
+    <h4 class="centered-content">There are no entries, create one below</h4>
+
+
+    {% else %}
     <table>
         <tr>
             <th>Task</th>
@@ -27,6 +32,7 @@
             </tr>
         {% endfor %}    
     </table>
+    {% endif %}
 
     <form action="/" method="POST" class="centered-content">
         <input type="text" name="content" id="content">
