@@ -3,6 +3,11 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
 }
+.container {
+    max-width: 100%; /* Set the maximum width to the width of the viewport */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
 /* Style for the header and navbar */
 header {
     background-color: #333; /* Background color of the header */
@@ -17,7 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 20px 20px 20px;
     z-index: 1;
     background-color: #333;
 }
