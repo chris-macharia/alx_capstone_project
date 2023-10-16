@@ -90,6 +90,42 @@ header {
     text-align: center; /* Center the content inside the container */
 }
 
+/* Styling the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* Styling the main link */
+.dropdown a {
+    text-decoration: none;
+    color: #fff;
+}
+/* Styling the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the main link */
+    left: 0;
+}
+/* Styling the dropdown links */
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap; /* Prevent line breaks in dropdown items */
+}
+/* Hover effect for the dropdown container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*CSS for scrollable div holding the task table*/
 .scrollable-div {
     margin-top: 90px;
     overflow: auto; /* Add scrollbars when content exceeds the height */

@@ -15,14 +15,21 @@
                 <a href="{{ url_for('home') }}">Home</a>
             </div>
             <div class="search-box">
-                <input type="text" placeholder="Search">
+                <input type="search" placeholder="Search">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Category</a></li>
                 <li><a href="#">Due Date</a></li>
                 <li><a href="#">Priority</a></li>
-                <li><a href="#">Profile</a></li>
+                <li class="dropdown">
+                    <a href="#">Profile</a>
+                    <div class="dropdown-content">
+                        <a href="#"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                    </div>
+                </li>
+                
             </ul>
         </nav>
     </header>
