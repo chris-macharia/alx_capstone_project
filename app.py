@@ -62,7 +62,10 @@ def update(id):
     else:
         return render_template('update.html', task=task_to_update)
 
-
+@app.route('/home', methods=['POST', 'GET'])
+def home():
+    return index();
+    
 
 
 if __name__ == "__main__":
