@@ -1,12 +1,99 @@
 body{
     margin: 0;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: grey;
+}
+/* Style for the header and navbar */
+header {
+    background-color: #333; /* Background color of the header */
+    color: #fff; /* Text color in the header */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+    background-color: #333;
+}
+
+/* Style for the search box */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px;
+}
+
+/* Style for the search input */
+.search-box input {
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    padding: 5px;
+    width: 400px; /* Adjust the width as needed */
+}
+
+/* Style for the search button */
+.search-box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Style for the search icon (Font Awesome) */
+.search-box button i {
+    color: #333;
+    font-size: 1.2em; /* Adjust the size as needed */
+}
+
+
+/* Style for the profile link */
+.profile a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style for the navigation links */
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px; /* Spacing between navigation links */
+}
+
+/* Style for navigation link text */
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #00A859; /* Change to green color on hover */
 }
 .centered-content {
     width: 60%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 10px auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
+}
+
+.scrollable-div {
+    margin-top: 90px;
+    overflow: auto; /* Add scrollbars when content exceeds the height */
+    border: 1px solid #ccc; /* Optional border for styling */
 }
 table {
     border: 1px solid black;
@@ -20,6 +107,150 @@ th, td {
     padding: 8px;
     text-align: left;
 }
+/*CSS for bell icon*/
+.toggle-bell {
+    cursor: pointer;
+    color: grey; 
+}
+.toggle-bell.clicked {
+    color: green;
+}
+/* Style for the toggle button */
+.toggle {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 28px;
+    padding: 3px;
+    margin: 2px 2px 2px 2px;
+    border-radius: 50px;
+    cursor: pointer;
+ }
+ .toggle-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+ }
+ .toggle-label {
+    position: relative;
+    display: block;
+    height: inherit;
+    font-size: 12px;
+    background: red;
+    border-radius: inherit;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 3px
+    rgba(0, 0, 0, 0.15);
+ }
+ .toggle-label:before,
+ .toggle-label:after {
+    position: absolute;
+    top: 50%;
+    color: black;
+    margin-top: -.5em;
+    line-height: 1;
+ }
+ .toggle-label:before {
+    /* content: attr(data-off); */
+    right: 11px;
+    color: #fff;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+ }
+ .toggle-label:after {
+    /* content: attr(data-on); */
+    left: 8px;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+ }
+ .toggle-input:checked~.toggle-label {
+    background: green;
+ }
+ .toggle-input:checked~.toggle-label:before {
+    opacity: 0;
+ }
+ .toggle-input:checked~.toggle-label:after {
+    opacity: 1;
+ }
+ .toggle-handle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 28px;
+    height: 28px;
+    background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+    border-radius: 50%;
+ }
+ .toggle-handle:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -6px 0 0 -6px;
+    width: 16px;
+    height: 16px;
+ }
+ .toggle-input:checked~.toggle-handle {
+    left: 25px;
+    box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+ }
+
+ /* Transition*/
+ .toggle-label,
+ .toggle-handle {
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+/* Style for rectangular buttons with rounded corners */
+.button {
+    display: inline-block;
+    padding: 0 4px 0 0; /* Increase padding for larger buttons */
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #466297;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    text-align: center; /* Center the button text */
+    margin: 0 0px 10px 0; /* Center the button within its container */
+    height: 30px;
+    width: 80px;
+}
+
+/* Hover effect for all buttons */
+.button:hover {
+    background-color: #fff;
+    color: #333;
+    border-color: #333;
+}
+/* Hover effect for updating and deleting buttons */
+.update-button:hover {
+    background-color: #4aa179; /* Change to green color on hover */
+    color: #fff;
+    border-color: #389e6f;
+}
+.delete-button:hover {
+    background-color: #834139; /* Change to green color on hover */
+    color: #fff;
+    border-color: #703535;
+}
+/*CSS for text field*/
+#content {
+    width: 300px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 15px; /* Rounded corners */
+    font-size: 16px;
+}
+#task-submit-button{
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    height: 40px; /* Set the same height as the text input */
+    line-height: 40px; /* Center text vertically within the button */
+}
+
 /* CSS for the Social Media Section*/
 .social-media-section {
     text-align: center;
@@ -58,6 +289,26 @@ th, td {
 .social-media-section a i.fab.fa-linkedin {
     color: #0077B5; /* LinkedIn blue */
 }
+/* Define styles for the hidden class */
+.hidden {
+    display: none;
+}
 
+/* Define styles for the footer */
+#page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.update-task-form{
+    margin-top: 100px;
+}
 
 

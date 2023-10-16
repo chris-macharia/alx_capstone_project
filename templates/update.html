@@ -5,13 +5,13 @@
 {% endblock %}
 
 {% block body %}
-<div class="content">
+<div class="update-task-form">
     <h1 class="centered-content">Update tasks</h1>
 
     
     <form action="/update/{{task.id}}" method="POST" class="centered-content">
         <input type="text" name="content" id="content" value="{{task.content}}">
-        <input type="submit" value="Update Task">
+        <input type="submit" value="Update Task" class="button update-button">
     </form>
 </div>
 {% endblock %}
