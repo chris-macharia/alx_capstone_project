@@ -1,2 +1,5 @@
 *__pycache__
 /instance/test.db
+*bkp
+*dtmp
+/prototype/*
