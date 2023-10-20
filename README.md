@@ -34,12 +34,12 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Task Manager using flask</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome project to finish off software engineering at ALX, Vamos
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="#"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
@@ -83,16 +83,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://imgur.com/a/CJAixk2)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+-This is v.0.0.1 Of a Task  Manager app that was part of my ALX capstone project.<br>
+-The main focus was to create a basic application that can perform CRUD operations in  DB.<br>
+-While some efforts were put into UI and user experience, much room has been left for improvement to give a more aesthetic product.<br>
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+A few points to note:
+* More emphasy went into making things work as the aesthetics can always be done later
+* The Footer of the app isn't working and needs a FIX.
 
 Use the `BLANK_README.md` to get started.
 
@@ -120,65 +119,64 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+-To use this application, follow the steps indicated below:
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+1. You will require python installed. If not installed, look up on the internet how to do it :-) 
+* python
   ```sh
-  npm install npm@latest -g
+  python3
+  ```
+2. You will also require pip installed. If not installed, look up on the internet how to do it :-) 
+* pip or pip3
+  ```sh
+  python3 install pip
+  ```
+3. You will also require virtualenv installed. If not installed, look up on the internet how to do it :-) 
+* python
+  ```sh
+  pip intsall virtualenv
   ```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_Below is an example of how you can instruct your audience on installing and setting up the app. 
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-3. Install NPM packages
+2. Navigate to the cloned repo
    ```sh
-   npm install
+   cd alx_capstone_project
    ```
-4. Enter your API in `config.js`
+3. create a virtual environment
+   ```sh
+   python -m virtualenv venv(replace venv with the name you want for your virtual environment)
+   ```
+4. Install flask
+   ```sh
+   pip install flask
+   ```
+5. Install flask_sqlalchemy
+   ```sh
+   pip install flask_sqlalchemy
+   ```
+
+6. Activate your environment `activate.bat`
    ```js
-   const API_KEY = 'ENTER YOUR API';
+   ./venv/Scripts/activate.bat
    ```
-
+7. Run the app server
+   ```js
+   python app.py
+   ```
+7. Access the app-: In your web browser, enter the following url
+   ```js
+   localhost:5000
+   ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -210,8 +208,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Chris Macharia - [@chriss_macharia](https://twitter.com/your_username) - christophermaina003@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
