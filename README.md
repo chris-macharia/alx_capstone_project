@@ -13,7 +13,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/chris-macharia/alx_capstone_project">
-    <img src="/images/logo/logo1" alt="Logo" width="80" height="80">
+    <img src="/images/logo/logo1.jpg" alt="Logo" width="80" height="80">
   </a>
 
   <h1 align="center">Task Manager using flask</h3>
