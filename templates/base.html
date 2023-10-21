@@ -36,7 +36,8 @@
             </nav>
         </header>
     
-        {% block body %}
+        {% block body %}{% endblock %}
+    
         <div class="social-media-section hidden" id="page-footer">
             <a href="#">
                 <i class="fab fa-facebook"></i>
@@ -52,7 +53,6 @@
             </a>
         </div>
     </div>
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
-        {% endblock %}
