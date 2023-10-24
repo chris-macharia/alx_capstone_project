@@ -127,17 +127,17 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    python -m virtualenv venv(replace venv with the name you want for your virtual environment)
    ```
-4. Install flask
+4. Activate your environment `activate.bat`
+   ```js
+   ./venv/Scripts/activate.bat
+   ```
+5. Install flask
    ```sh
    pip install flask
    ```
-5. Install flask_sqlalchemy
+6. Install flask_sqlalchemy
    ```sh
    pip install flask_sqlalchemy
-   ```
-6. Activate your environment `activate.bat`
-   ```js
-   ./venv/Scripts/activate.bat
    ```
 7. Run the app server
    ```js
