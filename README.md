@@ -135,7 +135,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    pip install flask_sqlalchemy
    ```
-
 6. Activate your environment `activate.bat`
    ```js
    ./venv/Scripts/activate.bat
